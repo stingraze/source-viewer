@@ -27,6 +27,7 @@ class ViewController: NSViewController {
         }
     }
     @IBAction func button_click(_ sender: Any) {
+        //Function for getting textURL's string Value
         let myURLString = textURL.stringValue
         guard let myURL = URL(string: myURLString) else {
             print("Error: \(myURLString) doesn't seem to be a valid URL")
